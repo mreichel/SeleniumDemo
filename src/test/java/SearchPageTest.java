@@ -2,7 +2,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -19,7 +19,7 @@ public class SearchPageTest {
 
     @Before
     public void openTheBrowser() {
-        page = PageFactory.initElements(new SafariDriver(), SearchPage.class);
+        page = PageFactory.initElements(new HtmlUnitDriver(), SearchPage.class);
         page.open("http://www.google.de/");
     }
 
