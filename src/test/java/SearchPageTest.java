@@ -23,11 +23,6 @@ public class SearchPageTest {
         page.open("http://www.google.de/");
     }
 
-    @After
-    public void closeTheBrowser() {
-        page.close();
-    }
-
     @Test
     public void userSearchForFlensburgTest() {
         page.searchForTerm("flensburg");
