@@ -27,7 +27,7 @@ public class SearchPageTest {
     public void userSearchForFlensburgTest() {
         page.searchForTerm("flensburg");
         assertThat(page.getTitle(), containsString("flensburg") );
-
+assertTrue(false);
     }
 
 }
